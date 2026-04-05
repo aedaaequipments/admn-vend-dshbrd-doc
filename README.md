@@ -8,6 +8,7 @@
 | Admin Dashboard (11 pages, full build) | Done |
 | Vendor Dashboard (5 pages, full build) | Done |
 | Frontend build (`npm run build`) | Passes — zero errors |
+| **QA Audit (18 bugs found, all fixed)** | **Done** |
 | Offline mode (hooks created, banner wired) | Partial — SW + IndexedDB queue pending |
 | Alert notifications (Web Push, WhatsApp/SMS) | Planned — not yet implemented |
 
@@ -18,6 +19,8 @@
 | `DASHBOARD-SPEC.md` | **Complete dashboard specification** — all pages, components, API routes, offline mode, notifications. Start here. |
 | `AGRINET-Admin-Vendor-Dashboard-Plan.md` | Full project plan including firmware migration + dashboard. |
 | `IMPLEMENTATION-STATUS.md` | **What was built** — file-by-file summary of server fixes and frontend pages. |
+| `QA-BUG-REPORT.md` | **QA audit results** — 18 bugs found across server, dashboard, mobile app with severity ratings. |
+| `QA-FIX-CHANGELOG.md` | **Fix details** — code-level description of every fix applied, with before/after snippets. |
 
 ## Architecture Summary
 
@@ -73,10 +76,14 @@ Vendor Dashboard        ──┘         │
 | Real-time | MQTT.js over WebSocket (port 9001) |
 | Routing | React Router v6 |
 
-## Source Locations
+## GitHub Repositories
 
-| Component | Path |
-|-----------|------|
-| Pi4 Server (fixed) | `~/Downloads/ssmiot2files/sasyamithra-server-FIXED/` |
-| Admin + Vendor Frontend | `~/Projects/agrinet-admin/` |
-| This documentation | `~/Projects/admn-vend-dshbrd-doc/` |
+| Component | Repository |
+|-----------|------------|
+| Pi4 Server | [aedaaequipments/sasyamithra-server](https://github.com/aedaaequipments/sasyamithra-server) |
+| Admin + Vendor Dashboard | [aedaaequipments/agrinet-admin](https://github.com/aedaaequipments/agrinet-admin) |
+| Mobile App (v6.2) | [aedaaequipments/sasyamithra-app](https://github.com/aedaaequipments/sasyamithra-app) |
+| This documentation | [aedaaequipments/admn-vend-dshbrd-doc](https://github.com/aedaaequipments/admn-vend-dshbrd-doc) |
+| Valve Controller Firmware | [aedaaequipments/AGRINET-Valve-Controller](https://github.com/aedaaequipments/AGRINET-Valve-Controller) |
+| Weather Station Firmware | [aedaaequipments/AGRINET-Weather-Station](https://github.com/aedaaequipments/AGRINET-Weather-Station) |
+| Motor Gateway Firmware | [aedaaequipments/AGRINET-Motor-Gateway](https://github.com/aedaaequipments/AGRINET-Motor-Gateway) |
